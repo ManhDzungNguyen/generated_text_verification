@@ -1,6 +1,4 @@
 import os
-import time
-from pprint import pprint
 from typing import List
 
 import numpy as np
@@ -38,6 +36,7 @@ def generate_sentence_mapping(
                 - "src_sent_idx": The index of the source sentence within its document.
                 - "score": The similarity score between the generated and source sentences.
     """
+
     # Tokenize sentences in generated documents
     generated_docs_sents = [sent_tokenize(doc) for doc in generated_documents]
     generated_docs_sentence_lengths = [
